@@ -13,20 +13,20 @@ const Container = styled.div`
         background-color: white;
         box-shadow: 0px 0px 4px 1px rgba(186, 186, 186, 0.25);
         padding: 2em;
+        padding-bottom: 12em;
             
     }
 
     .bar-new-student {
-        border: 3px solid #986CDF;
+        border: 3px solid #119FDC;
         border-radius: .5em;
-        margin-right: .4em;
-        background-color: #986CDF;
+        margin-right: .2em;
+        background-color: #119FDC;
     }
 
     .text-new-student {
         display: flex;
         flex-direction: row;
-
         font-size: 32px;
     }
     .text-new-student div {
@@ -37,6 +37,7 @@ const Container = styled.div`
         display: flex;
         flex-direction: row;
         padding-top: 2.4em;
+        
     }
 
     .agp-input {
@@ -52,13 +53,32 @@ const Container = styled.div`
     .input-left {
         display: flex;
         flex-direction: column;
-        margin-right: 3em;
+        margin-right: 2em;
     }
 
     .input-right {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1em;
+        margin-bottom: 3em;
+        
+    }
+
+   
+
+    .i1 input {
+        width:555px;
+        
+        top:430px;
+        position: absolute;
+        
+    }
+
+    .i2 input {
+        width:555px;
+        height: 180px;
+        top:480px;
+        position: absolute;
+        
     }
 
     input {
@@ -69,9 +89,19 @@ const Container = styled.div`
         border: 1px solid #A8A8A8;
         box-sizing: border-box;
         border-radius: 5px;
-        padding-left: .5em;
+        padding-left: 1em;
+        
+        
+        
+    }
+
+    .number1-student {
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left: 0.2em;
 
     }
+  
 
     .name-student {
         font-size: 18px;
@@ -92,15 +122,34 @@ const Container = styled.div`
     .class-student {
         font-size: 18px;
         color: #615858;
-        margin-right: 0.8em;
+        margin-right: 1.8em;
         font-weight: 800;
+    }
+
+    .class1-student {
+        font-size: 18px;
+        color: #615858;
+        margin-right: 0.7em;
+        font-weight: 800;
+       
     }
 
     .corse-student {
         font-size: 18px;
         color: #615858;
-        margin-right: 1em;
+        margin-right: 1.5em;
         font-weight: 800;
+        
+        
+    }
+
+    .number1-student {
+
+        font-size: 18px;
+        color: #615858;
+        width: 5.5em;
+        font-weight: 800;
+
     }
 
 
@@ -114,13 +163,17 @@ const Container = styled.div`
         width: 106px;
         height: 36px;
 
-        background: #E911C6;
+        background: #119FDC;
         border-radius: 44px;
         border: none;
         color: white;
         font-size: 14px;
         margin-left: 2em;
         font-weight: bold;
+        position:absolute;
+        top:65%;
+        
+        
     }
 
     .student-registered-box {
@@ -221,7 +274,7 @@ const Container = styled.div`
     }
 
     thead {
-        background-color: #986CDF;
+        background-color: #6CC3DF;
     }
 
     table {
@@ -260,6 +313,15 @@ const Container = styled.div`
     .coluna-acao {
         width: .1em;
     }
+    .coluna-acao > button {
+        visibility: hidden;
+    }
+
+    tr:hover{
+        .coluna-acao > button {
+            visibility: visible;
+        }   
+    }
 
     button {
         cursor: pointer;
@@ -276,7 +338,7 @@ const Container = styled.div`
 
     .absolute {
         color: white;
-        background-color: #DB21BD;
+        background-color: #119FDC;
         border: 3px solid white;
         border-radius: 50%;
         position: absolute;
